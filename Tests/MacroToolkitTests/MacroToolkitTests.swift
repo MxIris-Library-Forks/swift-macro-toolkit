@@ -24,7 +24,6 @@ final class MacroToolkitTests: XCTestCase {
         withMacroTesting(
             macros: testMacros
         ) {
-            isRecording = false
             super.invokeTest()
         }
     }
@@ -222,16 +221,16 @@ final class MacroToolkitTests: XCTestCase {
                 }
 
                 static let nextDay: Self =
-                    Self (rawValue: 1 << Options.nextDay.rawValue)
+                    Self(rawValue: 1 << Options.nextDay.rawValue)
 
                 static let secondDay: Self =
-                    Self (rawValue: 1 << Options.secondDay.rawValue)
+                    Self(rawValue: 1 << Options.secondDay.rawValue)
 
                 static let priority: Self =
-                    Self (rawValue: 1 << Options.priority.rawValue)
+                    Self(rawValue: 1 << Options.priority.rawValue)
 
                 static let standard: Self =
-                    Self (rawValue: 1 << Options.standard.rawValue)
+                    Self(rawValue: 1 << Options.standard.rawValue)
             }
 
             extension ShippingOptions: OptionSet {
